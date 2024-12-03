@@ -1,0 +1,18 @@
+
+[tool.poetry]
+name = "youtube_comment_summarizer"
+version = "0.1.0"
+description = "youtube-yapper-trapper using crewAI"
+authors = ["Zuhair Aziz <zuhairaziz95@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"],version = "^0.28.8"}
+agentops = "^0.1.6"
+
+[tool.poetry.scripts]
+youtube_comment_summarizer = "youtube_comment_summarizer.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
